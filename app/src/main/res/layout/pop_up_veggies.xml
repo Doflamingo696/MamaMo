@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FF">
+
+    <ImageView
+        android:id="@+id/popup_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/pop_up_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/add_image"
+        android:layout_width="107dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="119dp"
+        android:background="@drawable/add_img_box"
+        android:src="#00FF"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_bg"
+        app:layout_constraintEnd_toEndOf="@+id/popup_bg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fruit_name"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="41dp"
+        android:hint="Name"
+        android:textColor="@color/pinkDarkpastel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/popup_bg"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-321dp"
+        app:layout_constraintStart_toStartOf="@+id/popup_bg"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="15dp"
+        android:text="Ripeness Level"
+        android:textColor="@color/pinkDarkpastel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/popup_bg"
+        app:layout_constraintTop_toBottomOf="@+id/fruit_name" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:text="ToggleButton"
+        android:textColor="@color/pinkDarkpastel"
+        android:textOff="1"
+        android:textOn="1"
+        app:layout_constraintStart_toStartOf="@+id/popup_bg"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:text="ToggleButton"
+        android:textColor="@color/pinkDarkpastel"
+        android:textOff="2"
+        android:textOn="2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton1"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="3"
+        android:textOn="3"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="4"
+        android:textOn="4"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton3"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="5"
+        android:textOn="5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton4"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="6"
+        android:textOn="6"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="7"
+        android:textOn="7"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton6"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="8"
+        android:textOn="8"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton7"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="9"
+        android:textOn="9"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton8"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ripeness_bg"
+        android:textColor="@color/pinkDarkpastel"
+        android:textColorHint="@color/pinkDarkpastel"
+        android:textOff="10"
+        android:textOn="10"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton9"
+        app:layout_constraintTop_toTopOf="@+id/popup_bg" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/pop_up_bg"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_bg"
+        app:layout_constraintEnd_toEndOf="@+id/popup_bg" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/pop_up_bg"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_bg"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
